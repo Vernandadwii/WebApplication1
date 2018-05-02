@@ -6,8 +6,8 @@
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ujitarobby_attendance_system?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.autocommit">false</property>
     <property name="hibernate.connection.isolation">2</property>
+    <property name="hibernate.connection.autocommit">false</property>
     <mapping class="com.vernanda.entity.Room"/>
     <mapping class="com.vernanda.entity.Role"/>
     <mapping class="com.vernanda.entity.ClassSchedule"/>

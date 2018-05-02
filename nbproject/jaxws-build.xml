@@ -19,11 +19,75 @@
             <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
         </taskdef>
     </target>
-    <target name="wsgen-SistemAkademik" depends="wsgen-init">
+    <target name="wsgen-ClassSchedule" depends="wsgen-init">
         <copy todir="${build.classes.dir}/META-INF">
-            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.SistemAkademik.xml"/>
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.ClassSchedule.xml"/>
         </copy>
-        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.SistemAkademik" xendorsed="true">
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.ClassSchedule" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-AcademicYearWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.AcademicYearWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.AcademicYearWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-RoomWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.RoomWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.RoomWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-DepartmentWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.DepartmentWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.DepartmentWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-SemesterWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.SemesterWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.SemesterWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-RoleWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.RoleWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.RoleWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-CourseWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.CourseWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.CourseWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-FacultyWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.FacultyWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.FacultyWS" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-StudentWS" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-com.vernanda.ws.StudentWS.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="com.vernanda.ws.StudentWS" xendorsed="true">
             <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
         </wsgen>
     </target>

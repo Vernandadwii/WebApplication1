@@ -1,5 +1,5 @@
 package com.vernanda.entity;
-// Generated Apr 12, 2018 4:13:21 PM by Hibernate Tools 4.3.1
+// Generated Apr 25, 2018 1:34:17 PM by Hibernate Tools 4.3.1
 
 
 import javax.persistence.Column;

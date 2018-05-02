@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
-    <service name="SistemAkademik">
-      <implementation-class>com.vernanda.ws.SistemAkademik</implementation-class>
+    <service name="ClassSchedule">
+      <implementation-class>com.vernanda.ws.ClassSchedule</implementation-class>
+    </service>
+    <service name="AcademicYearWS">
+      <implementation-class>com.vernanda.ws.AcademicYearWS</implementation-class>
+    </service>
+    <service name="RoomWS">
+      <implementation-class>com.vernanda.ws.RoomWS</implementation-class>
+    </service>
+    <service name="DepartmentWS">
+      <implementation-class>com.vernanda.ws.DepartmentWS</implementation-class>
+    </service>
+    <service name="SemesterWS">
+      <implementation-class>com.vernanda.ws.SemesterWS</implementation-class>
+    </service>
+    <service name="RoleWS">
+      <implementation-class>com.vernanda.ws.RoleWS</implementation-class>
+    </service>
+    <service name="CourseWS">
+      <implementation-class>com.vernanda.ws.CourseWS</implementation-class>
+    </service>
+    <service name="FacultyWS">
+      <implementation-class>com.vernanda.ws.FacultyWS</implementation-class>
+    </service>
+    <service name="StudentWS">
+      <implementation-class>com.vernanda.ws.StudentWS</implementation-class>
     </service>
   </services>
   <clients/>
